@@ -1,0 +1,797 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: yellow;
+    color: black;
+}
+body{
+    background-color:rgb(255, 255, 255);
+}
+.nav{
+    background-color: rgb(237, 238, 212);
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 3%;
+    position: fixed;
+    z-index: 10000;
+
+}
+.nav h3{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    cursor: copy;
+}
+.nav ul{
+   list-style: none;
+}
+.nav ul li{
+    display: inline;
+    padding-right: 1.3rem;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    transition: all 1s; 
+    padding-bottom: 5px;
+}
+.nav ul li a:hover{
+    color: rgb(34, 34, 8); 
+    text-decoration: underline 3px solid black;  
+}
+/* home */
+.home{
+    width: 100%;
+    height: 100vh;
+    /* margin-bottom: 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 5;
+}
+ .div1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55%;
+    margin-top: 10%;
+    
+
+}
+.heading{
+    margin-bottom: 8%;
+    margin-left: 10%;
+}
+.div1 h1{
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    
+}
+.div1 h2{
+    font-size: 3rem;
+    padding-bottom: 2%;
+    color: rgb(0, 0, 0);
+
+}
+.div1 h3{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+.div1 span{
+    color: yellow;
+    font-size: 3.5rem;
+    
+}
+.div1 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 40px;
+    outline: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 3px 2px 1px  rgb(0, 0, 0);
+    transition: all 1s;
+}
+.div1 a:hover{
+    background-color: yellow;
+    color: black;
+    box-shadow: 5px 2px 1px  rgb(255, 0, 0);
+    
+}
+.img{
+    position: relative;
+    width: 35%;
+    height: 538px;
+    border-bottom: 10px solid yellow;
+    filter: saturate(1.7);
+}
+/* about */
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+}
+.div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.div4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 10%;
+}
+.img1{
+    border-radius: 10000px;
+    border-bottom: 20px solid rgb(255, 255, 255);
+    filter: saturate(1.8);
+    width: 100%;
+    position: relative;
+    top: 4em;
+}
+.div3{
+    width: 40%;
+    max-height: 40%;
+    position: relative;
+    bottom: 150px;
+}
+.div4 h1{
+    font-size: 1.8rem;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+.div4 h1::first-letter{
+    font-size: 2.8rem;
+    color: #fff;
+}
+.div4 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 1s;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.div4 a:hover{
+    background-color: yellow;
+    color: black;
+    transform: scale(1.2);
+}
+.div4 p{
+    font-size: larger;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+}
+/* skils */
+.skils{
+    width: 100%;
+    height: 100vh;
+    padding-top: 4%;
+}
+.div5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.skils h1{
+    padding-top: 3% ;
+    padding-bottom: 8%;
+    font-size: 2.6rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.skils h1::first-letter{
+    color: yellow;
+    font-size: 3rem;
+}
+.skils2{
+    width: 60%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-left: 3%;
+}
+.skils1{
+    width: 40%;
+    margin-right: 5%;
+}
+.skils1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* .div5{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+} */
+.skil1{
+    margin-bottom: 5%;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+}
+.skils2 h3{
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+}
+.s1{
+    width: 80%;
+    background-color: rgb(255, 153, 0);
+    transition: all 2s;
+}
+.html::first-letter{
+    font-size: 2rem;
+    color: rgb(255, 117, 4);
+}
+.s2{
+    width: 70%;
+    background-color: rgb(104, 104, 255);
+}
+.css::first-letter{
+    font-size: 2rem;
+    color:  rgb(104, 104, 255);
+}
+.s3{
+    width: 60%;
+    background-color: #cf00c5;
+}
+.botstrap::first-letter{
+    font-size: 2rem;
+    color: #cf00c5;
+}
+/* project */
+.project{
+    width: 100%;
+    background-color: yellow;
+    display: block;
+    padding-bottom: 15%;
+}
+.project h1{
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 2% 0;
+    color: rgb(0, 0, 0);
+}
+.project h1:first-letter{
+    font-size: 2.8rem;
+    color: rgb(255, 255, 255);
+}
+.cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+.card1{
+    height: 20em;
+    margin-right: 2em;
+    width: 25%;
+    background-color: #fff;
+    outline: 1px solid rgb(0, 0, 0);
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.card1 video{
+    width: 100%;
+    height: 60%;
+}
+.card1 p{
+    text-align: center;
+    font-weight: 800;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+.card1 a{
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 50px;
+    border-radius: 10px;
+    transition: 1s ease;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.card1 a:hover{
+    background-color: rgb(255, 255, 0);
+    transform: scale(1.1);
+    color: black;
+}
+.card1 img{
+    width: 100%;
+    height: 60%;
+}
+.card1:hover{
+    transform: scale(1.1);
+}
+.card1 img:hover{
+    filter:invert(5deg);
+}
+.card1 h4{
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: yellow;
+    text-shadow: 1px 1px 1px yellow;
+}
+.card1 p{
+    font-weight: bold;
+    margin-bottom: 8%;
+    color: rgb(0, 0, 0);
+}
+.card1 a1 , a2 ,a3 {
+    border:1px solid rgb(0, 0, 0);
+    padding: 4% 10%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: all 1s;
+}
+.card1  a1 , a2 ,a3:hover{
+    background-color: yellow;
+    color: black;
+    transform: scale(1.2);
+}
+/* contact */
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+.contact h1{
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 2% 0;
+    color: rgb(0, 0, 0);
+}
+.contact h1:first-letter{
+    font-size: 2.8rem;
+    color: yellow;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: scale(0.9);
+}
+.contact1{
+    width: 40%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.contact1 img{
+    width: 100%;
+    height: 70%;
+}
+.contact1 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8%;
+    list-style-type: none;
+}
+.contact1 ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10% 15%;
+    border-radius: 5px;
+    transition: all 1s;
+}
+.a1:hover{
+    background-color: rgb(64, 64, 255);
+    color: rgb(255, 255, 255);
+    padding: 18% 23%;
+    
+}
+.a2:hover{
+    background-color: rgb(52, 255, 34);
+    color: rgb(255, 255, 255);
+    padding: 18% 23%;
+    
+}
+.a3:hover{
+    background-color: rgb(230, 0, 96);
+    color: white;
+    padding: 18% 23%;
+    
+}
+
+.contact2{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid rgb(0, 0, 0);
+    margin-left: 3%;
+    border-radius: 20px;
+}
+.contact2 input{
+    width: 80%;
+    height: 8%;
+    padding-left: 2%;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+    /* margin-left: 10%; */
+}
+.contact2 input:focus{
+    outline: 2px solid rgb(110, 221, 255);
+}
+.contact2 h4::first-letter{
+    font-size: 1.5rem;
+    color: yellow;
+}
+.contact2 h4{
+    color: rgb(0, 0, 0);
+}
+.contact2 textarea{
+    width: 80%;
+    height: 30%;
+    border-radius: 8px;
+     font-size: 1rem;
+    /* margin-left: 10%; */
+}
+.contact2 button{
+    width: 20%;
+    height: 8%;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: all 1s;
+}
+.contact2 button:hover{
+    background-color: yellow;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: -2px -1px 2px yellow;
+}
+.contact2:hover{
+    background-color: rgb(196, 186, 186);
+}
+.contact1:hover{
+    background-color: rgb(202, 196, 196);
+}
+.contact1 img{
+    filter: saturate(3);
+}
+/* footer */
+.footer{
+    background-color: rgb(255, 238, 0);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: all 1s;
+    
+}
+.footer li{
+    margin-bottom: 5%;
+}
+.footer h1{
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+.footer span{
+    font-size: 1.5rem;
+    animation-name: bourich1;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+}
+.footer ul{
+    list-style-type: none;
+    padding-top: 10%;
+}
+.footer1{
+    margin-top: 30px;
+}
+.footer h2{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+.footer1 a:hover{
+    color: rgb(255, 0, 0);
+}
+@media screen and (max-width:  720px) and (min-width:300px){
+    .home{
+        margin: 0;
+        height: 100vh;
+    }
+    .nav ul li{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+    .div1{
+        border: none;
+    }
+    .div2{
+        display: block;
+        text-align: center;
+    }
+    .div4{
+        width: 100%;
+        padding-left: 2%;
+    }
+    .img1{
+        width: 100%;
+    }
+    .div3{
+        display: none;
+    }
+    .about{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skils{
+        overflow: hidden;
+    }
+    .div5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skils2{
+        width: 100%;
+        padding: 0;
+        padding-left: 5%;
+    }
+    .skil1{
+        animation: none;
+    }
+    .skils2 h3{
+        animation: none;
+    }
+    .skils1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        margin-bottom: 10%;
+    }
+    .skils1 img{
+       
+        width: 50%;
+        
+        
+    }
+    /* project */
+    .project{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20%;
+    }
+    .cards{
+        width: 100%;
+        display: block;
+    }
+    .card1{
+        
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    /* contact */
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.9);
+    }
+    .contact1 , .contact2{
+        width: 100%;
+        padding-bottom: 10%;
+        margin-top: 5%;
+    }
+    .contact2 input{
+        width: 90%;
+        padding: 2% 0;
+    }
+    .contact2 textarea{
+        width: 90%;
+        height: 200px;
+    }
+    .contact2 button{
+        padding: 2% 5%;
+    }
+    /* footer */
+    .footer{
+        width: 100%;
+    }
+    .footer h1{
+        text-align: center;
+    }
+
+
+
+
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:  900px ){
+    .home{
+        height: 72%;
+    }
+    .div2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div4{
+        width: 100%;
+        padding-left: 2%;
+    }
+    .about{
+        height: 90vh;
+    }
+    .div3{
+        width: 50%;
+        /* padding-left: 25%; */
+    }
+    .img1{
+        display: none;
+    }
+    .about{
+        max-height: 580px;
+    }
+    .div5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .skils{
+        width: 100%;
+        height: 85%;
+        /* height: 144vh; */
+    }
+    .skils2{
+        width: 100%;
+        padding: 0;
+        padding-left: 5%;
+    }
+    .skil1{
+        animation: none;
+    }
+    .skils2 h3{
+        animation: none;
+    }
+    .skils1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3%;
+    }
+    .skils1 img{
+       
+        width: 70%;
+        
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card1{
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .contact{
+        height: 80%;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.9);
+    }
+    .contact1 , .contact2{
+        width: 100%;
+        padding-bottom: 15%;
+        margin-top: 5%;
+    }
+    .contact2 input{
+        width: 90%;
+        padding: 2% 0;
+    }
+    .contact2 textarea{
+        width: 90%;
+        height: 200px;
+    }
+    .contact2 button{
+        padding: 2% 5%;
+    }
+    /* footer */
+    .footer{
+        width: 100%;
+    }
+    .footer h1{
+        text-align: center;
+    }
+
+}
+
+
+
+@keyframes bourich{
+    0%{
+        background-image: url(img/service.png);
+    }
+    50%{
+        background-image: url(img/scholl.png);
+    }
+    70%{
+        background-image: url(img/service.png);
+    }
+    100%{
+        background-image: url(img/scholl.png);
+    }
+}
